@@ -1,6 +1,6 @@
 def run():
 	squares = []
-	#non-pythonistic way
+	#non-pythonic way
 	# List with all the squares 1 to 100
 	print("Doing the boring way.")
 	for i in range(1, 101):
@@ -14,7 +14,7 @@ def run():
 
 	print(squares_div3)
 
-	#pythonistic way
+	#pythonic way
 	# comprehension lists
 	print("Comprehension lists:")
 	sq_cl = [i**2 for i in range(1,101)]
