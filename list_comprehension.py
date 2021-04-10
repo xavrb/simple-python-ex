@@ -23,5 +23,14 @@ def run():
 	print(f"Square of numbers that cannot be divided by 3 with comprehension lists: {sql_cl_div3}")
 
 
+
+
+	#HW
+	# Print a list using comprehension lists of numbers that can be divided by 4,6,9 range: 1-99999
+
+	hw_list = [i for i in range(1,100000) if (i%4 == 0 and i%6 == 0 and i%9 == 0)]
+	print(hw_list)
+
+
 if __name__ == "__main__":
 	run()
