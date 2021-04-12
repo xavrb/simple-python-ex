@@ -10,11 +10,14 @@ def cubeItList():
 def cubeItDict():
     return {i: math.pow(i,3) for i in range(1,101)}
 
+def cubeItDiv3():
+    return {i: math.pow(i,3) for i in range(1,101) if i%3 != 0}
+
 def run():
     print(f"{cubeItList()}\n")
     print(f"{cubeItDict()}\n")
 
-
+    print(f"Non divisible by 3: {cubeItDiv3()}\n")
 
 
 if __name__ == "__main__":
