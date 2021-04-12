@@ -13,6 +13,10 @@ def run():
     all_adults = list(map(lambda adult: adult["name"], list(filter(lambda adult: adult["age"] >= 18, DATA))))
     print(all_adults)
 
+    # using map
+    old_people = list(map(lambda old_adult: old_adult | {"old": old_adult["age"]>70}, DATA))
+    print(old_people)
+
 
 def read_data_bulk(data_set):
     with open(data_set) as file:
